@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Cake Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="recipe-card">
+      <h1 class="recipe-title">Chocolate Cake</h1>
+
+      <img src="chocolate-cake.jpg" alt="Chocolate Cake" class="recipe-image" />
+
+      <!-- Recipe Information Section -->
+
+      <div class="recipe-info">
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <!-- Ingredients List (Initially Hidden) -->
+        <ul id="ingredients" class="hidden">
+          <li>1 cup sugar</li>
+          <li>2 cups flour</li>
+          <li>1/2 cup cocoa powder</li>
+          <li>1 cup milk</li>
+          <li>2 eggs</li>
+          <li>1/2 cup vegetable oil</li>
+          <li>1 teaspoon vanilla extract</li>
+          <li>1.5 teaspoons baking powder</li>
+          <li>1/2 teaspoon salt</li>
+        </ul>
+
+        <button id="toggle-steps">Show Steps</button>
+        <!-- Steps List (Initially Hidden) -->
+        <ol id="steps" class="hidden">
+          <li>Preheat oven to 350°F (175°C).</li>
+          <li>Grease and flour a 9-inch cake pan.</li>
+          <li>
+            In a large bowl, mix sugar, flour, cocoa powder, baking powder, and
+            salt.
+          </li>
+          <li>
+            Add milk, eggs, vegetable oil, and vanilla extract to the dry
+            ingredients.
+          </li>
+          <li>Beat the mixture until smooth and well combined.</li>
+          <li>Pour the batter into the prepared cake pan.</li>
+          <li>
+            Bake for 30-35 minutes or until a toothpick inserted comes out
+            clean.
+          </li>
+          <li>
+            Let the cake cool in the pan for 10 minutes, then transfer to a wire
+            rack to cool completely.
+          </li>
+        </ol>
+
+        <p class="prep-info">Prep time: 45 minutes | Serving size: 8 people</p>
+      </div>
+
+      <!-- Progress Bar Container -->
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <!-- Start Cooking and Next Step Buttons -->
+      <div class="cooking-buttons">
+        <button id="start-cooking">Start Cooking</button>
+        <button id="next-step" class="hidden">Next Step</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

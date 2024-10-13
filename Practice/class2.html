@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 2</title>
+    <style>
+      .ele {
+        background-color: yellow;
+        margin: 20px;
+        padding: 20px;
+        height: 50px;
+        width: 50px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        border: 5px dotted red;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container2 {
+        display: grid;
+        background-color: blue;
+        grid-template-columns: auto auto auto;
+      }
+    </style>
+  </head>
+
+  <!-- ctrl+p in search for prettier formatting  -->
+
+  <!-- CSS FLEXBOX, GRID -->
+  <body>
+    <!-- <div class="container"> -->
+    <div class="container2">
+      <div class="ele">1</div>
+      <div class="ele">2</div>
+      <div class="ele">3</div>
+
+      <div class="ele">4</div>
+      <div class="ele">5</div>
+      <div class="ele">6</div>
+
+      <div class="ele">7</div>
+      <div class="ele">8</div>
+      <div class="ele">9</div>
+    </div>
+
+    <!-- display flex places the elements horizontally or vertically. you can change the direction using flex-direction.
+     justify content aligns the elements in horizontal direction depending on the attribute
+     align items aligns the elements in vertically direction depending on the attribute -->
+
+    <!-- display grid displays elements in a grid structure (table format)
+    grid-template-columns used to define no.of columns that depends on no. of autos.-->
+  </body>
+</html>

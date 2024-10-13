@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 4</title>
+    <style>
+      #div1 {
+        height: 350px;
+        width: 350px;
+        background-color: yellow;
+        padding: 50px;
+        border: 2px solid red;
+        margin: 50px;
+        box-sizing: border-box;
+      }
+        /* 
+      @media only screen and (max-width: 450px)
+      {
+        #div2 {
+          background-color: yellow;
+          height: auto;
+          width: auto;
+        }
+      } */
+
+      @media only screen and (orientation:landscape)
+      {
+        .container{
+          flex-direction: column;
+        }
+      }
+
+      .container {
+        background-color: yellow;
+        display: flex;
+      }
+
+      .item {
+        background-color: rebeccapurple;
+        padding: 10px;
+        margin: 10px;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+
+  <!-- BOX SIZING
+MEDIA QUERIES -->
+
+  <body>
+    <!-- box-sizing border box includes padding and border in the height and width specified for the element.
+    hence the size of content is less than the total element size. content-padding-border-margin
+    margin is never included. -->
+    <div id="div1">hello</div>
+
+    <!-- media queries control orientation, height width of viewport, resolution etc.
+    not - not on this device
+    only - only on this device 
+    @media not/only mediatype and (expression)
+    {
+    css code}-->
+
+    <div id="div2">hello2</div> 
+    <!-- max screen size of device is 450px, under that do this -->
+
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+  </body>
+</html>

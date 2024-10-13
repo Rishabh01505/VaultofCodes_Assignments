@@ -1,0 +1,174 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Recipe Card Container */
+.recipe-card {
+  max-width: 600px;
+  width: 90%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Recipe Title */
+.recipe-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Recipe Image */
+.recipe-image {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recipe-image:hover {
+  transform: scale(1.05);
+}
+
+/* Recipe Information Section */
+.recipe-info {
+  margin-top: 20px;
+}
+
+/* Hidden Class for Toggle Visibility */
+.hidden {
+  display: none;
+}
+
+/* Lists Styling */
+ul,
+ol {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover Effects on List Items */
+ul li:hover,
+ol li:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff4b3e;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Preparation Info */
+.prep-info {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #777;
+}
+
+/* Progress Bar Container */
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  margin: 25px 0;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Progress Bar */
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #ff6f61;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease;
+}
+
+/* Cooking Buttons Container */
+.cooking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  .recipe-title {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cooking-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active Step Highlight */
+.active-step {
+  background-color: #ffebcd;
+  border-left: 4px solid #ff6f61;
+  padding-left: 10px;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
+}
